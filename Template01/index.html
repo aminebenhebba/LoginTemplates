@@ -13,22 +13,22 @@
             <form action="#">
                 <h1>Create Account</h1>
                 <div class="social-container">
-                    <a href ="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href ="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href ="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
                 <div class="infield">
-                    <input type="text" placeholder="Name">
-                    <label for=""></label>
+                    <input type="text" placeholder="Name" />
+                    <label></label>
                 </div>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email">
-                    <label for=""></label>
+                    <input type="email" placeholder="Email" name="email"/>
+                    <label ></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password">
-                    <label for=""></label>
+                    <input type="password" placeholder="Password"/>
+                    <label></label>
                 </div>
                 <button>Sign Up</button>
             </form>
@@ -37,18 +37,18 @@
             <form action="#">
                 <h1>Sign in</h1>
                 <div class="social-container">
-                    <a href ="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href ="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href ="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email">
-                    <label for=""></label>
+                    <input type="email" placeholder="Email"/>
+                    <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password">
-                    <label for=""></label>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <label></label>
                 </div>
                 <a href="#" class="forgot">Forgot your password?</a>
                 <button>Sign In</button>
@@ -58,7 +58,7 @@
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with you personnel info</p>
+                    <p>To keep connected with us please login with your personal info</p>
                     <button>Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
@@ -70,5 +70,16 @@
             <button id="overlay-btn"></button>
         </div>
     </div>
+
+    <script>
+        const container = document.getElementById("container");
+        const overlayContainer = document.getElementById("overlay-id");
+        const overlayBtn = document.getElementById("overlay-btn");
+        
+        overlayBtn.addEventListener('click', ()=> {
+            container.classList.toggle('right-panel-active');
+            overlayBtn.classList.remove('btnScaled');
+        });
+    </script>
 </body>
 </html>
